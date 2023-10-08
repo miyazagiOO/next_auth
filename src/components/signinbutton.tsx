@@ -1,6 +1,7 @@
 "use client";
 import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import './index.css';
 
 
 
@@ -27,7 +28,7 @@ const SigninButton = () => {
 
 
         <p>{session.user.name}</p>
-        <button className="btn btn-danger" onClick={handleSignout}>
+        <button className="button" onClick={handleSignout}>
           SignOut
         </button>
 
@@ -39,7 +40,7 @@ const SigninButton = () => {
 
   return (
     <>
-      <button onClick={handleSignin} className="btn btn-primary">
+      <button onClick={handleSignin} className="button1">
         SignIn
       </button>
 

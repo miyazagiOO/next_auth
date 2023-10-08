@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { ChangeEvent, useState } from "react";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
+import './index.css';
 
 export default function Page() {
   const router = useRouter();
@@ -84,11 +85,11 @@ export default function Page() {
             onChange={handleChange}
           />
         </div>
-        <button className="btn btn-primary" type="submit">
+        <button className="button1" type="submit">
           Signin
         </button>
         <Link href="/signup">
-          <button className="btn btn-primary">Sign Up</button>
+          <button className="button1">Sign Up</button>
         </Link>
       </form>
     </>

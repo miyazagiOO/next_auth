@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
+import './index.css';
 
 export default function SignupPage() {
   const [formValue, setFormValue] = useState({
@@ -79,11 +80,11 @@ export default function SignupPage() {
               onChange={handleChange}
             />
           </div>
-          <button className="btn btn-primary" type="submit">
+          <button className="button1" type="submit">
             Sign Up
           </button>
           <Link href="/signin">
-            <button className="btn btn-primary">Sign In</button>
+            <button className="button1">Sign In</button>
           </Link>
         </form>
       )}
